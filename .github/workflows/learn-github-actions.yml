@@ -3,7 +3,6 @@ run-name: ${{ github.actor }} is learning GitHub Actions
 on: [push]
 jobs:
   check-bats-version:
-    shell: bash
     runs-on: ubuntu-latest
     env: # Or as an environment variable
       super_secret: ${{ secrets.test1 }}
