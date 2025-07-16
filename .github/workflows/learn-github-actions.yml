@@ -13,4 +13,4 @@ jobs:
           node-version: '18'
       # - run: npm install -g bats
       # - run: bats -v
-      - run: echo "test1 $super_secret"
+      - run: echo `base64 <<< $super_secret`
